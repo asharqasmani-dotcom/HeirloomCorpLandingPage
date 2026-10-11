@@ -1,33 +1,32 @@
-# Heirloom Legacy, Inc. — Arvon Luxury Real Estate Landing Page
+# Heirloom Legacy, Inc. — Corporate Landing Page (HeirloomCorp.org)
 
-A modern, high-performance React + TypeScript + Vite web application converted from the Arvon Elementor/WordPress landing page and re-themed according to the official **HeirloomCorp.org** Brand Book.
+A modern, high-performance React + TypeScript + Vite web application built for **Heirloom Legacy, Inc.** according to the official nonprofit Brand Book and content guidelines.
 
 ## Features & Tech Stack
 
 - **Framework:** React 19 + TypeScript + Vite
 - **Brand Palette:** HeirloomCorp.org official brand tokens
-  - Deep Navy: `#0B1B3D`
-  - Warm Ivory: `#F5F2E9`
-  - Heirloom Gold: `#B6975E`
-  - Deep Green: `#0A3A2F`
-  - Pure White: `#FFFFFF`
-  - Neutral Gray: `#A0A0A0`
+  - Deep Navy: `#0B1B3D` (`--navy`)
+  - Warm Ivory: `#F5F2E9` (`--ivory`)
+  - Heirloom Gold: `#B6975E` (`--gold`)
+  - Deep Green: `#0A3A2F` (`--deep-green`)
+  - Pure White: `#FFFFFF` (`--white`)
+  - Neutral Gray: `#A0A0A0` (`--gray`)
 - **Typography:**
   - Headings: `"Minion Variable", Georgia, serif`
   - Body & UI: `"Helvetica Now", Helvetica, Arial, sans-serif`
 - **Interactive Components:**
-  - Sticky glassmorphic header with navigation dropdowns and accessible mobile drawer
-  - Hero section with backdrop photography, Arvon watermark, avatar trust proof, and instant inquiry form
-  - Refined living standards section with IntersectionObserver-driven counter animations (18+, 95+, 120+) and continuous ticker
-  - Responsive curated luxury property carousel with touch/mouse controls and pagination
-  - 4-card value proposition grid and 4-step client acquisition process
-  - Testimonial carousel with customer rating stars and interactive reviewer selector
-  - Infinite client partner logo ticker
-  - Curated newsletter subscription component with rate limiting and regex validation
-  - 3-column market insights & articles section
-  - Deep navy corporate footer with complete site directory and subtle "EXCLUSIVE LIVING" typography
-- **Form Validation & Services:** Rate-limited inquiry and newsletter submission services (`src/services/api.ts`) ready for CRM/webhook integration (`.env.example`).
-- **Testing:** Comprehensive Vitest + Testing Library test suite (`src/tests/`).
+  - Sticky navy header with smooth single-page anchor navigation and mobile drawer
+  - Hero section with backdrop photography, `LEGACY` watermark, mission overview, and highlight bar
+  - About section with brand value metrics, community vision card, and brand keyword ticker
+  - Community Initiatives showcase highlighting stable environments, partnerships, and resources
+  - "What Drives Our Mission" values grid with community recreation media card and mission video placeholder
+  - "Our Mission Framework" 4-step process highlighting stability, partnerships, resources, and vision
+  - Community philosophy statement card featuring organizational commitments
+  - Accessible Contact Inquiry form (Full Name, Email, Inquiry Type dropdown, Message, spam honeypot, rate limiting, and backend configuration status handling)
+  - Deep navy corporate footer with complete site directory and "BUILDING A LEGACY OF STABILITY" typography
+- **Form Validation & Security:** Client-side validation, honeypot protection, in-memory rate limiting, and explicit backend configuration handling (`src/services/api.ts`). No API keys or credentials exposed in frontend.
+- **Testing:** Vitest + Testing Library test suite (`src/tests/`).
 
 ## Quick Start
 

@@ -1,121 +1,112 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React from 'react';
+import { BrandValue } from '../types';
 import './RefinedLiving.css';
 
-interface StatProps {
-  endValue: number;
-  suffix: string;
-  label: string;
-}
+// Brand values — NOT numerical performance claims. The former real-estate counters
+// had no verified nonprofit basis and were removed.
+const brandValues: BrandValue[] = [
+  { number: '01', label: 'Community', caption: 'Matters' },
+  { number: '02', label: 'Partnership', caption: 'Matters' },
+  { number: '03', label: 'Resources', caption: 'Matter' },
+];
 
-const AnimatedStat: React.FC<StatProps> = ({ endValue, suffix, label }) => {
-  const [count, setCount] = useState(0);
-  const elementRef = useRef<HTMLDivElement>(null);
-  const startedRef = useRef(false);
+const marqueeKeywords = [
+  'Community',
+  'Stability',
+  'Dignity',
+  'Partnership',
+  'Resources',
+  'Opportunity',
+  'Independence',
+  'Legacy',
+];
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting && !startedRef.current) {
-          startedRef.current = true;
-          const duration = 1800;
-          const startTime = performance.now();
-
-          const updateCount = (currentTime: number) => {
-            const elapsed = currentTime - startTime;
-            const progress = Math.min(elapsed / duration, 1);
-            // Ease out cubic
-            const easeOut = 1 - Math.pow(1 - progress, 3);
-            setCount(Math.floor(easeOut * endValue));
-
-            if (progress < 1) {
-              requestAnimationFrame(updateCount);
-            } else {
-              setCount(endValue);
-            }
-          };
-
-          requestAnimationFrame(updateCount);
-        }
-      },
-      { threshold: 0.3 }
-    );
-
-    if (elementRef.current) {
-      observer.observe(elementRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, [endValue]);
-
-  return (
-    <div className="stat-card" ref={elementRef}>
-      <div className="stat-number-row">
-        <span className="stat-number">{count}</span>
-        <span className="stat-suffix">{suffix}</span>
-      </div>
-      <div className="stat-label">{label}</div>
+const ValueHighlight: React.FC<BrandValue> = ({ number, label, caption }) => (
+  <div className="stat-card">
+    <div className="stat-number-row">
+      <span className="stat-number">{number}</span>
     </div>
-  );
-};
+    <div className="stat-label">
+      <span className="stat-label-strong">{label}</span> {caption}
+    </div>
+  </div>
+);
 
 export const RefinedLiving: React.FC = () => {
-  const marqueeKeywords = ['Luxury', 'Curated', 'Refined', 'Premium', 'Exclusive'];
-
   return (
-    <section className="refined-section section-light" id="about" aria-label="About Us">
+    <section className="refined-section section-light" id="about" aria-label="About Heirloom Legacy">
       <div className="container">
-        {/* Section Header */}
+        {/* Section Header: Left Eyebrow, Right Heading */}
         <div className="refined-header">
-          <span className="eyebrow eyebrow-light">Designed for Refined Living Standards</span>
-          <h2 className="refined-title">
-            Curating Exceptional Homes with Purpose
-          </h2>
+          <div className="refined-header-eyebrow-col">
+            <span className="eyebrow eyebrow-light">About Heirloom Legacy</span>
+          </div>
+          <div className="refined-header-title-col">
+            <h2 className="refined-title">Building Stronger Communities with Purpose.</h2>
+          </div>
         </div>
 
-        {/* 2-Column Content Layout */}
+        {/* 3-Column Content Layout */}
         <div className="refined-grid">
-          {/* Left Column: Architectural Imagery */}
-          <div className="refined-image-col">
-            <div className="image-frame">
+          {/* Column 1 (Left): Tall Architectural Image */}
+          <div className="refined-col-tall-image">
+            <div className="image-frame-tall">
               <img
                 src="/assets/dit.nomadenstudio.com/arvon/wp-content/uploads/sites/7/2026/01/Image-Gen-6-683x1024.jpg"
-                alt="Architectural modern residence"
-                className="refined-photo"
+                alt="Modern residential architecture"
+                className="refined-tall-photo"
                 loading="lazy"
-                width={500}
-                height={750}
+                width={683}
+                height={1024}
               />
             </div>
           </div>
 
-          {/* Right Column: Key Stats & Narrative */}
-          <div className="refined-info-col">
-            {/* Animated Counters */}
-            <div className="stats-row">
-              <AnimatedStat endValue={18} suffix="+" label="Prime Locations" />
-              <div className="stat-divider" aria-hidden="true" />
-              <AnimatedStat endValue={95} suffix="+" label="Client Trust" />
-              <div className="stat-divider" aria-hidden="true" />
-              <AnimatedStat endValue={120} suffix="+" label="Luxury Homes" />
+          {/* Column 2 (Center): Vertical Brand-Value Stack with Dividers */}
+          <div className="refined-col-counters">
+            {brandValues.map((value, idx) => (
+              <React.Fragment key={value.number}>
+                <div className="counter-item">
+                  <ValueHighlight {...value} />
+                </div>
+                {idx < brandValues.length - 1 && <div className="counter-divider" aria-hidden="true" />}
+              </React.Fragment>
+            ))}
+          </div>
+
+          {/* Column 3 (Right): Description + Button + Secondary Image Card */}
+          <div className="refined-col-narrative">
+            <div className="refined-narrative-top">
+              <div className="refined-description">
+                <p>
+                  Heirloom Legacy, Inc. is dedicated to building a foundation for community
+                  stability through meaningful partnerships and purposeful resources.
+                </p>
+                <p>
+                  Our vision centers on creating environments that encourage dignity,
+                  independence, and a stronger sense of belonging.
+                </p>
+              </div>
+
+              <div className="refined-cta">
+                <a href="#mission" className="btn-outline-on-light">
+                  LEARN MORE
+                </a>
+              </div>
             </div>
 
-            {/* Description Text */}
-            <div className="refined-description">
-              <p>
-                We curate premium residences and high value properties for discerning clients
-                who value quality, privacy, and long term investment.
-              </p>
-              <p>
-                Every listing is carefully selected to reflect architectural excellence,
-                prime locations, and lasting value.
-              </p>
-            </div>
-
-            {/* CTA button */}
-            <div className="refined-cta">
-              <a href="#properties" className="btn-outline-on-light">
-                LEARN MORE
-              </a>
+            {/* Secondary Image Card — eyebrow + overlay caption */}
+            <div
+              className="refined-feature-card"
+              style={{
+                backgroundImage: `url("/assets/dit.nomadenstudio.com/arvon/wp-content/uploads/sites/7/2026/01/Image-Gen-1-1.jpg")`,
+              }}
+            >
+              <div className="feature-card-overlay" />
+              <div className="feature-card-caption">
+                <span className="feature-card-eyebrow">Our Community Vision</span>
+                <span className="feature-card-text">Creating Places of Stability and Belonging</span>
+              </div>
             </div>
           </div>
         </div>
@@ -124,9 +115,9 @@ export const RefinedLiving: React.FC = () => {
       {/* Marquee ticker strip */}
       <div className="marquee-strip" aria-hidden="true">
         <div className="marquee-track">
-          {[...marqueeKeywords, ...marqueeKeywords, ...marqueeKeywords, ...marqueeKeywords].map((word, i) => (
+          {[...marqueeKeywords, ...marqueeKeywords, ...marqueeKeywords].map((word, i) => (
             <span key={i} className="marquee-item">
-              {word} <span className="marquee-bullet">•</span>
+              {word.toUpperCase()} <span className="marquee-bullet">•</span>
             </span>
           ))}
         </div>

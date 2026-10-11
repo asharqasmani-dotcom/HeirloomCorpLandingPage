@@ -21,8 +21,8 @@ export const tokens = {
     navyFaint: 'rgba(11, 27, 61, 0.14)',
   },
   fonts: {
-    title: '"Minion Variable", Georgia, serif',
-    body: '"Helvetica Now", Helvetica, Arial, sans-serif',
+    title: '"Cormorant Garamond", "Minion Variable", Georgia, serif',
+    body: '"Inter", "Helvetica Now", Helvetica, Arial, sans-serif',
   },
   typography: {
     eyebrow: {

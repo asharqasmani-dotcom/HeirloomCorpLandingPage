@@ -1,9 +1,20 @@
 import '@testing-library/jest-dom';
+import { vi } from 'vitest';
 
-// Polyfill IntersectionObserver for testing animated counters
-const mockIntersectionObserver = vi.fn().mockImplementation((callback) => ({
-  observe: vi.fn((target) => {
-    callback(
+// Polyfill IntersectionObserver (constructible) for components that observe sections
+class MockIntersectionObserver implements IntersectionObserver {
+  readonly root: Element | Document | null = null;
+  readonly rootMargin = '';
+  readonly scrollMargin = '';
+  readonly thresholds: ReadonlyArray<number> = [];
+  private callback: IntersectionObserverCallback;
+
+  constructor(callback: IntersectionObserverCallback) {
+    this.callback = callback;
+  }
+
+  observe = vi.fn((target: Element) => {
+    this.callback(
       [
         {
           isIntersecting: true,
@@ -13,18 +24,14 @@ const mockIntersectionObserver = vi.fn().mockImplementation((callback) => ({
           intersectionRect: target.getBoundingClientRect(),
           rootBounds: null,
           time: Date.now(),
-        },
+        } as IntersectionObserverEntry,
       ],
       this
     );
-  }),
-  unobserve: vi.fn(),
-  disconnect: vi.fn(),
-  takeRecords: vi.fn(() => []),
-  root: null,
-  rootMargin: '',
-  thresholds: [],
-  scrollMargin: '',
-}));
+  });
+  unobserve = vi.fn();
+  disconnect = vi.fn();
+  takeRecords = vi.fn(() => [] as IntersectionObserverEntry[]);
+}
 
-window.IntersectionObserver = mockIntersectionObserver as unknown as typeof IntersectionObserver;
+window.IntersectionObserver = MockIntersectionObserver as unknown as typeof IntersectionObserver;

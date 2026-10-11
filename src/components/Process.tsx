@@ -1,53 +1,57 @@
 import React from 'react';
 import { processSteps } from '../data/process';
-import { siteConfig } from '../data/siteConfig';
 import './Process.css';
 
 export const Process: React.FC = () => {
   return (
-    <section className="process-section section-dark" id="process" aria-label="Our Process">
+    <section className="process-section section-dark" id="mission" aria-label="Our Mission Framework">
       <div className="container">
-        {/* Section Header */}
+        {/* Section Header: Left Eyebrow & Title, Right Subtitle */}
         <div className="process-header">
-          <div className="header-text-block">
-            <span className="eyebrow eyebrow-dark">How We Work</span>
-            <h2 className="process-title">
-              From Vision to Exceptional Ownership
-            </h2>
-            <p className="process-subtitle">
-              Our process is designed to provide clarity, confidence, and discretion at every stage.
-              We ensure a seamless experience from the first consultation to final acquisition.
-            </p>
+          <div className="process-header-left">
+            <span className="eyebrow eyebrow-dark">Our Purpose</span>
+            <h2 className="process-title">From Shared Purpose to Stronger Communities.</h2>
           </div>
 
-          <div className="process-trust-badge">
-            <div className="trust-avatars">
-              {siteConfig.hero.avatars.map((av, idx) => (
-                <img key={idx} src={av} alt="" className="trust-avatar" width={36} height={36} />
-              ))}
-            </div>
-            <div className="trust-label">
-              Trusted By {siteConfig.hero.trustedCount}
-            </div>
+          <div className="process-header-right">
+            <p className="process-subtitle">
+              Heirloom Legacy, Inc. seeks to bring together people, partnerships, and purposeful
+              resources to support stability and meaningful community opportunities.
+            </p>
           </div>
         </div>
 
-        {/* 4 Process Step Cards */}
-        <div className="process-steps-grid">
-          {processSteps.map((step) => (
-            <div key={step.number} className="process-card">
-              <div className="step-header">
-                <span className="step-number">{step.number}</span>
-                {step.icon && (
-                  <div className="step-icon-wrapper">
-                    <img src={step.icon} alt="" className="step-icon-img" width={32} height={32} />
-                  </div>
-                )}
+        {/* Middle: Full-width architectural image banner */}
+        <div className="process-hero-banner">
+          <img
+            src="/assets/community/process-mission-banner.jpg"
+            alt="Creating Lasting Impact Through Community Partnerships and Purposeful Resources — Heirloom Legacy, Inc."
+            className="process-banner-image"
+            width={1024}
+            height={363}
+            loading="lazy"
+          />
+        </div>
+
+        {/* Bottom: 4 Connected Timeline Steps with circular nodes & connecting lines */}
+        <div className="process-timeline-wrapper">
+          <div className="process-timeline-line" aria-hidden="true" />
+          <div className="process-timeline-grid">
+            {processSteps.map((step) => (
+              <div key={step.number} className="process-step-node">
+                <div className="step-circle-badge">
+                  {step.icon ? (
+                    <img src={step.icon} alt="" className="step-badge-icon" width={32} height={32} />
+                  ) : null}
+                  <span className="step-badge-num">{step.number}</span>
+                </div>
+                <div className="step-content">
+                  <h3 className="step-title">{step.title}</h3>
+                  <p className="step-desc">{step.description}</p>
+                </div>
               </div>
-              <h3 className="step-title">{step.title}</h3>
-              <p className="step-desc">{step.description}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

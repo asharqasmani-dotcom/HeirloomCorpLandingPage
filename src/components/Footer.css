@@ -26,7 +26,7 @@
 }
 
 .footer-logo-img {
-  height: 44px;
+  height: 56px;
   width: auto;
   object-fit: contain;
 }
@@ -143,7 +143,8 @@ a.contact-value:hover {
 
 .footer-giant-title {
   font-family: var(--font-title);
-  font-size: clamp(2.5rem, 8vw, 8rem);
+  /* Sized so the full statement fits on one line without clipping */
+  font-size: clamp(1.3rem, 3.1vw, 3.6rem);
   font-weight: 600;
   letter-spacing: 0.12em;
   color: rgba(245, 242, 233, 0.12);

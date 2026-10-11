@@ -1,24 +1,29 @@
 import { Feature } from '../types';
 
+// Section 05 — Our Values
 export const featuresData: Feature[] = [
   {
     number: '01',
-    title: 'Proven Expertise',
-    description: 'Years of experience navigating high value properties with deep understanding of global luxury markets.',
+    title: 'Community First',
+    description:
+      'We believe strong communities begin with dignity, belonging, and opportunities for meaningful connection.',
   },
   {
     number: '02',
-    title: 'Exclusive Portfolio',
-    description: 'Access to carefully curated residences that meet the highest standards of design, location, and investment potential.',
+    title: 'Purposeful Partnerships',
+    description:
+      'We value relationships that bring people, organizations, and shared community goals together.',
   },
   {
     number: '03',
-    title: 'Personalized Approach',
-    description: 'Every client receives tailored recommendations based on lifestyle goals, preferences, and long term vision.',
+    title: 'Responsible Stewardship',
+    description:
+      'We recognize the importance of thoughtful planning and responsible use of available resources.',
   },
   {
     number: '04',
-    title: 'Global Network',
-    description: 'Strong international connections enabling seamless transactions across prime real estate destinations worldwide.',
+    title: 'Lasting Community Impact',
+    description:
+      'Our long-term vision is to support stronger communities through stability, purpose, and partnership.',
   },
 ];

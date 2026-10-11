@@ -1,0 +1,23 @@
+/* Motion-only overrides. Original layout, typography and brand colors stay intact. */
+@media (prefers-reduced-motion: no-preference) {
+  .btn-primary, .btn-outline-on-light, .btn-outline-on-dark {
+    transition: background-color .3s ease, color .3s ease, border-color .3s ease, transform .3s ease;
+  }
+  .btn-primary:hover, .btn-primary:focus-visible, .btn-primary:active,
+  .btn-outline-on-light:hover, .btn-outline-on-light:focus-visible, .btn-outline-on-light:active,
+  .btn-outline-on-dark:hover, .btn-outline-on-dark:focus-visible, .btn-outline-on-dark:active {
+    transform: scale(.9);
+  }
+  .feature-list-item:hover { transform: translateX(20px); }
+  /* Three identical runs: move by exactly one run, including its trailing gap. */
+  .logos-track { animation: reference-logos 33.333333s linear infinite; }
+}
+@keyframes reference-logos {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc((-100% - 60px) / 3)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .logos-track, .marquee-track { animation: none !important; }
+  .feature-list-item:hover, .btn-primary:hover,
+  .btn-outline-on-light:hover, .btn-outline-on-dark:hover { transform: none; }
+}

@@ -1,47 +1,71 @@
-import { describe, it, expect } from 'vitest';
-import { submitInquiry, submitNewsletter } from '../services/api';
+import { describe, it, expect, vi, afterEach } from 'vitest';
+import { submitContact, validateContact, NOT_CONFIGURED_MESSAGE } from '../services/api';
+import { ContactFormData } from '../types';
 
-describe('API & Form Validation Services', () => {
-  it('rejects inquiry with invalid email', async () => {
-    const res = await submitInquiry({
-      fullName: 'Eleanor Vance',
-      email: 'not-an-email',
-      phone: '555-1234',
-    });
+const validData: ContactFormData = {
+  fullName: 'Jordan Ellis',
+  email: 'jordan@example.org',
+  inquiryType: 'Community Partnership',
+  message: 'We would like to explore a partnership with Heirloom Legacy.',
+  website: '',
+};
+
+describe('Contact form validation', () => {
+  it('rejects an invalid email address', () => {
+    const errors = validateContact({ ...validData, email: 'not-an-email' });
+    expect(errors.email).toMatch(/valid email/i);
+  });
+
+  it('rejects an empty name, missing inquiry type, and short message', () => {
+    const errors = validateContact({ fullName: ' ', email: 'a@b.co', inquiryType: '', message: 'hi' });
+    expect(errors.fullName).toMatch(/required/i);
+    expect(errors.inquiryType).toMatch(/inquiry type/i);
+    expect(errors.message).toMatch(/minimum 10/i);
+  });
+
+  it('passes valid data with no errors', () => {
+    expect(validateContact(validData)).toEqual({});
+  });
+});
+
+describe('submitContact', () => {
+  afterEach(() => {
+    vi.unstubAllEnvs();
+    vi.restoreAllMocks();
+  });
+
+  it('returns field errors for invalid submissions', async () => {
+    const res = await submitContact({ ...validData, email: 'bad' });
     expect(res.success).toBe(false);
-    expect(res.message).toMatch(/highlighted errors/i);
     expect(res.fieldErrors?.email).toMatch(/valid email/i);
   });
 
-  it('rejects inquiry with empty required name', async () => {
-    const res = await submitInquiry({
-      fullName: '   ',
-      email: 'eleanor@example.com',
-      phone: '555-1234',
-    });
+  it('silently rejects honeypot submissions', async () => {
+    const res = await submitContact({ ...validData, website: 'http://spam.example' });
     expect(res.success).toBe(false);
-    expect(res.fieldErrors?.fullName).toMatch(/required/i);
+    expect(res.fieldErrors).toBeUndefined();
   });
 
-  it('successfully validates and submits valid inquiry', async () => {
-    const res = await submitInquiry({
-      fullName: 'Marcus Sterling',
-      email: 'marcus@sterling.co',
-      phone: '+1 (555) 234-5678',
-    });
-    expect(res.success).toBe(true);
-    expect(res.message).toMatch(/thank you/i);
-  });
-
-  it('rejects invalid newsletter email', async () => {
-    const res = await submitNewsletter({ email: 'invalid-address' });
+  it('never reports a false success when no endpoint is configured', async () => {
+    vi.stubEnv('VITE_CONTACT_ENDPOINT', '');
+    const res = await submitContact(validData);
     expect(res.success).toBe(false);
-    expect(res.fieldErrors?.email).toMatch(/valid email/i);
+    expect(res.message).toBe(NOT_CONFIGURED_MESSAGE);
   });
 
-  it('successfully subscribes with valid newsletter email', async () => {
-    const res = await submitNewsletter({ email: 'investor@familyoffice.com' });
+  it('posts to the configured endpoint and reports success', async () => {
+    vi.stubEnv('VITE_CONTACT_ENDPOINT', 'https://relay.example/contact');
+    const fetchMock = vi.fn().mockResolvedValue({ ok: true, status: 200 });
+    vi.stubGlobal('fetch', fetchMock);
+
+    const res = await submitContact(validData);
+
+    expect(fetchMock).toHaveBeenCalledOnce();
+    const [url, init] = fetchMock.mock.calls[0];
+    expect(url).toBe('https://relay.example/contact');
+    const body = JSON.parse((init as RequestInit).body as string);
+    expect(body.to).toBe('info@heirloomlegacy.org');
+    expect(body.inquiryType).toBe('Community Partnership');
     expect(res.success).toBe(true);
-    expect(res.message).toMatch(/thank you/i);
   });
 });

@@ -1,21 +1,14 @@
-export interface NavDropdownItem {
-  label: string;
-  href: string;
-}
-
 export interface NavItem {
   label: string;
   href: string;
-  dropdown?: NavDropdownItem[];
 }
 
-export interface Property {
+export interface Initiative {
   id: string;
   title: string;
-  location: string;
+  category: string;
   description: string;
   image: string;
-  badge?: string;
   href: string;
 }
 
@@ -32,13 +25,14 @@ export interface Feature {
   description: string;
 }
 
-export interface Testimonial {
+export interface Statement {
   id: string;
   author: string;
   role: string;
   quote: string;
   avatar: string;
-  rating: number;
+  /** Neutral organizational identifier shown where a star rating used to be. */
+  identifier: string;
 }
 
 export interface ClientLogo {
@@ -46,34 +40,42 @@ export interface ClientLogo {
   name: string;
   src: string;
   alt: string;
+  /** Placeholder artwork that must be replaced with client-approved partner logos before publishing. */
+  placeholder: boolean;
 }
 
 export interface Article {
   id: string;
   title: string;
-  date: { day: string; month: string };
+  /** Badge shown on the card. Articles are proposed editorial titles, so no dates are fabricated. */
+  badge: { primary: string; secondary: string };
   category: string;
   author: string;
   image: string;
   href: string;
+  /** True until the article has been written and published. */
+  pending: boolean;
 }
 
-export interface CounterStat {
-  value: number;
-  suffix: string;
+export interface BrandValue {
+  number: string;
   label: string;
+  caption: string;
 }
 
-export interface InquiryFormData {
+export type InquiryType =
+  | 'Community Partnership'
+  | 'Institutional Collaboration'
+  | 'Resource Support'
+  | 'General Inquiry';
+
+export interface ContactFormData {
   fullName: string;
   email: string;
-  phone: string;
-  csrfToken?: string;
-}
-
-export interface NewsletterFormData {
-  email: string;
-  csrfToken?: string;
+  inquiryType: InquiryType | '';
+  message: string;
+  /** Honeypot — must remain empty. Bots that fill it are silently rejected. */
+  website?: string;
 }
 
 export interface FormSubmissionResult {

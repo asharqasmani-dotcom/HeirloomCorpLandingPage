@@ -21,6 +21,16 @@
   justify-content: flex-end;
 }
 
+/* Bottom gradient overlay (mirrors the original hero's dark fade) for text legibility */
+.hero-backdrop::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(11, 27, 61, 0) 35%, rgba(11, 27, 61, 0.78) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
 /* Watermark typography in hero */
 .hero-watermark {
   position: absolute;
@@ -47,72 +57,63 @@
   gap: 36px;
 }
 
-/* Social Proof & Title row */
+/* Social Proof & Title row - Arvon 2-column bottom layout */
 .hero-upper-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+  width: 100%;
+}
+
+.hero-upper-left {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 800px;
+  max-width: 740px;
 }
 
-.hero-social-proof {
-  display: flex;
-  align-items: center;
-  gap: 16px;
+.hero-eyebrow {
+  width: fit-content;
 }
 
-.hero-avatar-stack {
-  display: flex;
-  align-items: center;
-}
-
-.hero-avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 2px solid var(--gold);
-  object-fit: cover;
-  margin-left: -12px;
-}
-
-.hero-avatar:first-child {
-  margin-left: 0;
-}
-
-.hero-rating-box {
-  display: flex;
-  flex-direction: column;
-}
-
-.hero-stars {
-  color: var(--gold);
-  font-size: 14px;
-  letter-spacing: 2px;
-}
-
-.hero-rating-label {
+.hero-description {
   font-family: var(--font-body);
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--ivory);
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--ivory-on-dark);
+  max-width: 600px;
+  text-shadow: 0 2px 12px rgba(11, 27, 61, 0.7);
 }
 
 .hero-title {
   font-family: var(--font-title);
-  font-size: clamp(2.2rem, 4.2vw, 3.4rem);
+  font-size: clamp(2.2rem, 3.8vw, 3.4rem);
   font-weight: 600;
-  line-height: 1.15;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
   color: var(--ivory);
   text-shadow: 0 4px 20px rgba(11, 27, 61, 0.8);
 }
 
 .hero-cta-wrapper {
-  margin-top: 8px;
+  flex-shrink: 0;
+  margin-bottom: 8px;
 }
 
 .hero-btn {
-  font-size: 14px;
+  font-size: 13px;
   padding: 16px 36px;
+  letter-spacing: 0.08em;
+  box-shadow: 0 10px 25px rgba(182, 151, 94, 0.3);
+}
+
+@media (max-width: 900px) {
+  .hero-upper-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /* Floating Inquiry Card */
@@ -168,6 +169,12 @@
   border-bottom: 1px solid rgba(11, 27, 61, 0.15);
   outline: none;
   transition: border-color var(--transition);
+}
+
+.hero-highlight-value {
+  display: block;
+  font-weight: 500;
+  cursor: default;
 }
 
 .form-input::placeholder {
@@ -249,6 +256,11 @@
 }
 
 @media (max-width: 767px) {
+  /* Content is taller than the viewport on phones; give it room below the header */
+  .hero-content {
+    padding-top: 56px;
+    gap: 28px;
+  }
   .hero-inquiry-card {
     border-radius: 18px;
     padding: 20px 16px;
