@@ -1,0 +1,35 @@
+export const siteConfig = {
+  name: 'Arvon',
+  organization: 'Heirloom Legacy, Inc.',
+  domain: 'HeirloomCorp.org',
+  tagline: 'Luxury Real Estate Specializing in Exclusive Properties',
+  heroSubtitle: 'Premium residences curated for refined living and long-term value.',
+  phone: '+1 (000) 123-4567',
+  displayPhone: '+234 3434 4567',
+  email: 'contact@arvonestate.com',
+  address: '88 Grand Avenue, Suite 1200 New York, NY 10022',
+  copyright: '© 2026 Arvon. All rights reserved.',
+  socials: [
+    { label: 'IG', href: 'https://instagram.com', ariaLabel: 'Instagram' },
+    { label: 'LI', href: 'https://linkedin.com', ariaLabel: 'LinkedIn' },
+    { label: 'FB', href: 'https://facebook.com', ariaLabel: 'Facebook' },
+    { label: 'YT', href: 'https://youtube.com', ariaLabel: 'YouTube' },
+    { label: 'X', href: 'https://x.com', ariaLabel: 'X (formerly Twitter)' },
+  ],
+  logos: {
+    primary: '/assets/dit.nomadenstudio.com/arvon/wp-content/uploads/sites/7/2026/01/Arvon-Logo.png',
+    light: '/assets/dit.nomadenstudio.com/arvon/wp-content/uploads/sites/7/2026/01/Arvon-Logo-lights.png',
+    favicon: '/assets/dit.nomadenstudio.com/arvon/wp-content/uploads/sites/7/2026/01/Arvon-FavIcon-150x150.png',
+  },
+  hero: {
+    bgImage: '/assets/dit.nomadenstudio.com/arvon/wp-content/uploads/sites/7/2026/01/Image-Gen-5.png',
+    watermark: 'ARVON',
+    trustedCount: '56+ Clients',
+    avatars: [
+      '/assets/dit.nomadenstudio.com/arvon/wp-content/uploads/sites/7/2026/01/chief-executive-officer-XU7E4ZV-150x150.jpg',
+      '/assets/dit.nomadenstudio.com/arvon/wp-content/uploads/sites/7/2026/01/indoor-office-portrait-of-pretty-mature-blond-busi-PAPVH57-150x150.jpg',
+      '/assets/dit.nomadenstudio.com/arvon/wp-content/uploads/sites/7/2026/01/businessman-standing-at-office-RULJWSZ-150x150.jpg',
+      '/assets/dit.nomadenstudio.com/arvon/wp-content/uploads/sites/7/2026/01/happy-female-office-worker-with-hand-on-chin-RRP5GH2-150x150.jpg',
+    ],
+  },
+};

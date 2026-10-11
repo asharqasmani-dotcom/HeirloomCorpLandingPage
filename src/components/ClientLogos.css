@@ -1,0 +1,75 @@
+.client-logos-section {
+  padding: 60px 0 80px 0;
+  background-color: var(--ivory);
+  overflow: hidden;
+}
+
+.logos-divider-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 50px;
+}
+
+.divider-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--gold-border-soft);
+}
+
+.divider-text {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--navy);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.logos-marquee {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.logos-track {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  animation: logos-marquee 30s linear infinite;
+  white-space: nowrap;
+}
+
+.logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  opacity: 0.75;
+  transition: opacity var(--transition);
+}
+
+.logo-item:hover {
+  opacity: 1;
+}
+
+.client-logo-img {
+  height: 42px;
+  width: auto;
+  max-width: none;
+  object-fit: contain;
+}
+
+@keyframes logos-marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 767px) {
+  .divider-text {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+  }
+}

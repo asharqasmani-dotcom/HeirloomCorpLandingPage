@@ -1,0 +1,131 @@
+.newsletter-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.newsletter-backdrop {
+  position: relative;
+  min-height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  padding: 120px 0;
+}
+
+.newsletter-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(11, 27, 61, 0.75);
+}
+
+.newsletter-watermark {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-title);
+  font-size: clamp(80px, 22vw, 360px);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: rgba(245, 242, 233, 0.05);
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.newsletter-content-wrapper {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-card {
+  max-width: 780px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter-title {
+  font-family: var(--font-title);
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--ivory);
+  margin-bottom: 24px;
+}
+
+.newsletter-desc {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--ivory-on-dark);
+  margin-bottom: 40px;
+  max-width: 680px;
+}
+
+.newsletter-form {
+  width: 100%;
+  max-width: 620px;
+}
+
+.newsletter-input-group {
+  display: flex;
+  background-color: var(--white);
+  border-radius: 999px;
+  padding: 6px 6px 6px 20px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+  align-items: center;
+  gap: 12px;
+}
+
+.input-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-grow: 1;
+}
+
+.newsletter-icon {
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+.newsletter-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--navy);
+}
+
+.newsletter-input::placeholder {
+  color: var(--gray);
+}
+
+.newsletter-submit-btn {
+  padding: 14px 28px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+@media (max-width: 767px) {
+  .newsletter-backdrop {
+    padding: 80px 0;
+  }
+  .newsletter-input-group {
+    flex-direction: column;
+    border-radius: 16px;
+    padding: 16px;
+    gap: 16px;
+  }
+  .newsletter-submit-btn {
+    width: 100%;
+  }
+}

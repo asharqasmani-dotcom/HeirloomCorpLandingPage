@@ -1,40 +1,62 @@
-# Arvon — editable local homepage
+# Heirloom Legacy, Inc. — Arvon Luxury Real Estate Landing Page
 
-A static developer copy of the supplied Arvon homepage. The original rendered HTML, responsive Elementor styles, imagery, fonts, and frontend animation/widget scripts are retained for fidelity. No WordPress installation or npm dependencies are needed to preview it.
+A modern, high-performance React + TypeScript + Vite web application converted from the Arvon Elementor/WordPress landing page and re-themed according to the official **HeirloomCorp.org** Brand Book.
 
-## Run
+## Features & Tech Stack
 
-Requires Python 3. From this folder:
+- **Framework:** React 19 + TypeScript + Vite
+- **Brand Palette:** HeirloomCorp.org official brand tokens
+  - Deep Navy: `#0B1B3D`
+  - Warm Ivory: `#F5F2E9`
+  - Heirloom Gold: `#B6975E`
+  - Deep Green: `#0A3A2F`
+  - Pure White: `#FFFFFF`
+  - Neutral Gray: `#A0A0A0`
+- **Typography:**
+  - Headings: `"Minion Variable", Georgia, serif`
+  - Body & UI: `"Helvetica Now", Helvetica, Arial, sans-serif`
+- **Interactive Components:**
+  - Sticky glassmorphic header with navigation dropdowns and accessible mobile drawer
+  - Hero section with backdrop photography, Arvon watermark, avatar trust proof, and instant inquiry form
+  - Refined living standards section with IntersectionObserver-driven counter animations (18+, 95+, 120+) and continuous ticker
+  - Responsive curated luxury property carousel with touch/mouse controls and pagination
+  - 4-card value proposition grid and 4-step client acquisition process
+  - Testimonial carousel with customer rating stars and interactive reviewer selector
+  - Infinite client partner logo ticker
+  - Curated newsletter subscription component with rate limiting and regex validation
+  - 3-column market insights & articles section
+  - Deep navy corporate footer with complete site directory and subtle "EXCLUSIVE LIVING" typography
+- **Form Validation & Services:** Rate-limited inquiry and newsletter submission services (`src/services/api.ts`) ready for CRM/webhook integration (`.env.example`).
+- **Testing:** Comprehensive Vitest + Testing Library test suite (`src/tests/`).
 
-```sh
-npm run dev
+## Quick Start
+
+### 1. Install dependencies
+```bash
+npm install
 ```
 
-Open http://localhost:5173. Alternatively run `python3 -m http.server 5173 --bind 127.0.0.1`.
-Serve over HTTP; do not double-click index.html, because asset paths are relative to the server root.
+### 2. Development server
+```bash
+npm run dev
+```
+Open [http://127.0.0.1:5173](http://127.0.0.1:5173).
 
-## Edit
+### 3. Run unit tests
+```bash
+npm test
+```
 
-- `index.html`: all homepage text, sections, links, image references, and form markup. Search for the text you want to replace.
-- `styles/custom.css`: add CSS overrides here, preserving original vendor CSS.
-- `scripts/local.js`: local form behavior and your future custom interactions.
-- `assets/dit.nomadenstudio.com/arvon/wp-content/uploads/sites/7/2026/01/`: original photography and logos.
-- `assets/dit.nomadenstudio.com/arvon/wp-content/uploads/sites/7/elementor/css/`: original layout, breakpoint, typography and color settings. `post-188.css` is the homepage; `post-4.css` contains global styles.
-- `assets/fonts.googleapis.com/` and `assets/fonts.gstatic.com/`: local font styles and font files.
-- `original-kit/`: the complete unmodified supplied Elementor kit, including other page templates and reference screenshots. These JSON templates can also be imported into a compatible WordPress/Elementor installation.
-- `reference/`: saved reference HTML and download manifest for provenance and troubleshooting.
-
-## Build
-
-```sh
+### 4. Production build
+```bash
 npm run build
 npm run preview
 ```
+The compiled output is located in `dist/`.
 
-Upload the contents of `dist/` to a static host at its root. No server-side application is included.
-
-## Integration boundaries
-
-This deliverable covers the homepage. Navigation links to other demo pages retain their original destinations; the supplied original kit includes those pages for future development. Original placeholder links remain placeholders. Form submissions are intercepted locally and display an honest preview notice: connect your own email/CRM endpoint before launch. They do not submit to the original demo's WordPress backend. Embedded video links, if used, require the third-party video host.
-
-The original branding and content are intentionally retained for you to replace. Retain the applicable template and image licenses supplied with your purchase. This is a static extraction, not a replacement WordPress theme or editable Elementor installation.
+## Environment Configuration
+To connect inquiry forms and newsletter signups to your live CRM, Zapier, or email provider, copy `.env.example` to `.env`:
+```bash
+cp .env.example .env
+```
+Populate `VITE_INQUIRY_ENDPOINT` and `VITE_NEWSLETTER_ENDPOINT` with your webhook URLs.
