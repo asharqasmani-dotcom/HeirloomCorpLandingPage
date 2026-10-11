@@ -1,0 +1,1582 @@
+{
+    "manifest_version": "1.0.23",
+    "title": "Arvon - Luxury Real Estate",
+    "page_builder": "elementor",
+    "kit_version": "1.0.0",
+    "templates": [
+        {
+            "name": "Global Kit Styles",
+            "screenshot": "screenshots\/global-kit-styles.jpg",
+            "source": "templates\/global.json",
+            "preview_url": "https:\/\/dit.nomadenstudio.com",
+            "type": "section",
+            "category": "page",
+            "metadata": {
+                "template_type": "global-styles",
+                "include_in_zip": "1",
+                "elementor_pro_required": null,
+                "additional_template_information": [
+                    "These are the global theme styles configured through the Elementor Theme Styles area."
+                ]
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Our Properties",
+            "screenshot": "screenshots\/our-properties.jpg",
+            "source": "templates\/our-properties.json",
+            "preview_url": "https:\/\/dit.nomadenstudio.com\/arvon\/template-kit\/our-properties\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "About Us",
+            "screenshot": "screenshots\/about-us.jpg",
+            "source": "templates\/about-us.json",
+            "preview_url": "https:\/\/dit.nomadenstudio.com\/arvon\/template-kit\/about-us\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Team",
+            "screenshot": "screenshots\/team.jpg",
+            "source": "templates\/team.json",
+            "preview_url": "https:\/\/dit.nomadenstudio.com\/arvon\/template-kit\/team\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Single Property",
+            "screenshot": "screenshots\/single-property.jpg",
+            "source": "templates\/single-property.json",
+            "preview_url": "https:\/\/dit.nomadenstudio.com\/arvon\/template-kit\/single-property\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Blog",
+            "screenshot": "screenshots\/blog.jpg",
+            "source": "templates\/blog.json",
+            "preview_url": "https:\/\/dit.nomadenstudio.com\/arvon\/template-kit\/blog\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Single Post",
+            "screenshot": "screenshots\/single-post.jpg",
+            "source": "templates\/single-post.json",
+            "preview_url": "https:\/\/dit.nomadenstudio.com\/arvon\/template-kit\/single-post\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "404 Error Page",
+            "screenshot": "screenshots\/404-error-page.jpg",
+            "source": "templates\/404-error-page.json",
+            "preview_url": "https:\/\/dit.nomadenstudio.com\/arvon\/template-kit\/404-error-page\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Contact Us",
+            "screenshot": "screenshots\/contact-us.jpg",
+            "source": "templates\/contact-us.json",
+            "preview_url": "https:\/\/dit.nomadenstudio.com\/arvon\/template-kit\/contact-us\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Header",
+            "screenshot": "screenshots\/header.jpg",
+            "source": "templates\/header.json",
+            "preview_url": "https:\/\/dit.nomadenstudio.com\/arvon\/template-kit\/header\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-header",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Contact Form",
+            "screenshot": "screenshots\/contact-form.jpg",
+            "source": "templates\/contact-form.json",
+            "preview_url": "https:\/\/dit.nomadenstudio.com\/arvon\/template-kit\/contact-form\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-contact",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Footer",
+            "screenshot": "screenshots\/footer.jpg",
+            "source": "templates\/footer.json",
+            "preview_url": "https:\/\/dit.nomadenstudio.com\/arvon\/template-kit\/footer\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-footer",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Request Form",
+            "screenshot": "screenshots\/request-form.jpg",
+            "source": "templates\/request-form.json",
+            "preview_url": "https:\/\/dit.nomadenstudio.com\/arvon\/template-kit\/request-form\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-contact",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Homepage",
+            "screenshot": "screenshots\/homepage.jpg",
+            "source": "templates\/homepage.json",
+            "preview_url": "https:\/\/dit.nomadenstudio.com\/arvon\/template-kit\/homepage\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Our Services",
+            "screenshot": "screenshots\/our-services.jpg",
+            "source": "templates\/our-services.json",
+            "preview_url": "https:\/\/dit.nomadenstudio.com\/arvon\/template-kit\/our-services\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Our Process",
+            "screenshot": "screenshots\/our-process.jpg",
+            "source": "templates\/our-process.json",
+            "preview_url": "https:\/\/dit.nomadenstudio.com\/arvon\/template-kit\/our-process\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Testimonials",
+            "screenshot": "screenshots\/testimonials.jpg",
+            "source": "templates\/testimonials.json",
+            "preview_url": "https:\/\/dit.nomadenstudio.com\/arvon\/template-kit\/testimonials\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "FAQ",
+            "screenshot": "screenshots\/faq.jpg",
+            "source": "templates\/faq.json",
+            "preview_url": "https:\/\/dit.nomadenstudio.com\/arvon\/template-kit\/faq\/",
+            "type": "page",
+            "category": "page",
+            "metadata": {
+                "template_type": "single-page",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        },
+        {
+            "name": "Newsletter Form",
+            "screenshot": "screenshots\/newsletter-form.jpg",
+            "source": "templates\/newsletter-form.json",
+            "preview_url": "https:\/\/dit.nomadenstudio.com\/arvon\/template-kit\/newsletter-form\/",
+            "type": "section",
+            "category": "section",
+            "metadata": {
+                "template_type": "section-contact",
+                "include_in_zip": "1",
+                "elementor_pro_required": null
+            },
+            "elementor_pro_required": false
+        }
+    ],
+    "required_plugins": [
+        {
+            "name": "Elementor",
+            "version": "3.34.2",
+            "file": "elementor\/elementor.php",
+            "author": "Elementor.com"
+        },
+        {
+            "name": "RTMKit",
+            "version": "1.6.8",
+            "file": "rometheme-for-elementor\/RomeTheme.php",
+            "author": "Rometheme"
+        },
+        {
+            "name": "RTMForm Builder",
+            "version": "1.2.4",
+            "file": "romethemeform\/rometheme-form.php",
+            "author": "Rometheme"
+        }
+    ],
+    "images": [
+        {
+            "filename": "interior-of-modern-design-room-3d-rendering-P4QN3DY.jpg",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/interior-of-modern-design-room-3d-rendering-P4QN3DY-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/our-properties.json",
+                    "name": "Our Properties"
+                },
+                {
+                    "source": "templates\/single-property.json",
+                    "name": "Single Property"
+                }
+            ],
+            "filesize": 55659,
+            "dimensions": [
+                1500,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/image-P4QN3DY"
+        },
+        {
+            "filename": "Image-Gen-8.jpg",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Image-Gen-8-800x800.jpg",
+            "templates": [
+                {
+                    "source": "templates\/our-properties.json",
+                    "name": "Our Properties"
+                },
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                }
+            ],
+            "filesize": 134739,
+            "dimensions": [
+                1000,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/labs.envato.com\/apps\/image-gen\/"
+        },
+        {
+            "filename": "Image-Gen-9.jpg",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Image-Gen-9-800x800.jpg",
+            "templates": [
+                {
+                    "source": "templates\/our-properties.json",
+                    "name": "Our Properties"
+                },
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                }
+            ],
+            "filesize": 112314,
+            "dimensions": [
+                1000,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/labs.envato.com\/apps\/image-gen\/"
+        },
+        {
+            "filename": "Image-Gen-10.jpg",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Image-Gen-10-800x800.jpg",
+            "templates": [
+                {
+                    "source": "templates\/our-properties.json",
+                    "name": "Our Properties"
+                },
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                }
+            ],
+            "filesize": 141563,
+            "dimensions": [
+                1000,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/labs.envato.com\/apps\/image-gen\/"
+        },
+        {
+            "filename": "Image-Gen-11.jpg",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Image-Gen-11-800x800.jpg",
+            "templates": [
+                {
+                    "source": "templates\/our-properties.json",
+                    "name": "Our Properties"
+                },
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                }
+            ],
+            "filesize": 145601,
+            "dimensions": [
+                1000,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/labs.envato.com\/apps\/image-gen\/"
+        },
+        {
+            "filename": "Image-Gen-12.jpg",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Image-Gen-12-800x800.jpg",
+            "templates": [
+                {
+                    "source": "templates\/our-properties.json",
+                    "name": "Our Properties"
+                },
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                }
+            ],
+            "filesize": 118863,
+            "dimensions": [
+                1000,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/labs.envato.com\/apps\/image-gen\/"
+        },
+        {
+            "filename": "Image-Gen-13.jpg",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Image-Gen-13-800x800.jpg",
+            "templates": [
+                {
+                    "source": "templates\/our-properties.json",
+                    "name": "Our Properties"
+                },
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                }
+            ],
+            "filesize": 90642,
+            "dimensions": [
+                1000,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/labs.envato.com\/apps\/image-gen\/"
+        },
+        {
+            "filename": "Clien-2.png",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Clien-2.png",
+            "templates": [
+                {
+                    "source": "templates\/our-properties.json",
+                    "name": "Our Properties"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/contact-us.json",
+                    "name": "Contact Us"
+                },
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/our-services.json",
+                    "name": "Our Services"
+                },
+                {
+                    "source": "templates\/our-process.json",
+                    "name": "Our Process"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 11834,
+            "dimensions": [
+                512,
+                112
+            ],
+            "image_source": "cc0",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "Clien-3.png",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Clien-3.png",
+            "templates": [
+                {
+                    "source": "templates\/our-properties.json",
+                    "name": "Our Properties"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/contact-us.json",
+                    "name": "Contact Us"
+                },
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/our-services.json",
+                    "name": "Our Services"
+                },
+                {
+                    "source": "templates\/our-process.json",
+                    "name": "Our Process"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 10346,
+            "dimensions": [
+                512,
+                112
+            ],
+            "image_source": "cc0",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "Clien-4.png",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Clien-4.png",
+            "templates": [
+                {
+                    "source": "templates\/our-properties.json",
+                    "name": "Our Properties"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/contact-us.json",
+                    "name": "Contact Us"
+                },
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/our-services.json",
+                    "name": "Our Services"
+                },
+                {
+                    "source": "templates\/our-process.json",
+                    "name": "Our Process"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 18564,
+            "dimensions": [
+                512,
+                112
+            ],
+            "image_source": "cc0",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "Clien-5.png",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Clien-5.png",
+            "templates": [
+                {
+                    "source": "templates\/our-properties.json",
+                    "name": "Our Properties"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/contact-us.json",
+                    "name": "Contact Us"
+                },
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/our-services.json",
+                    "name": "Our Services"
+                },
+                {
+                    "source": "templates\/our-process.json",
+                    "name": "Our Process"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 11161,
+            "dimensions": [
+                512,
+                112
+            ],
+            "image_source": "cc0",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "Clien-6.png",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Clien-6.png",
+            "templates": [
+                {
+                    "source": "templates\/our-properties.json",
+                    "name": "Our Properties"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/contact-us.json",
+                    "name": "Contact Us"
+                },
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/our-services.json",
+                    "name": "Our Services"
+                },
+                {
+                    "source": "templates\/our-process.json",
+                    "name": "Our Process"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 10637,
+            "dimensions": [
+                512,
+                112
+            ],
+            "image_source": "cc0",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "Clien-7.png",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Clien-7.png",
+            "templates": [
+                {
+                    "source": "templates\/our-properties.json",
+                    "name": "Our Properties"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/contact-us.json",
+                    "name": "Contact Us"
+                },
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/our-services.json",
+                    "name": "Our Services"
+                },
+                {
+                    "source": "templates\/our-process.json",
+                    "name": "Our Process"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 12332,
+            "dimensions": [
+                512,
+                112
+            ],
+            "image_source": "cc0",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "Clien-8.png",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Clien-8.png",
+            "templates": [
+                {
+                    "source": "templates\/our-properties.json",
+                    "name": "Our Properties"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/contact-us.json",
+                    "name": "Contact Us"
+                },
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/our-services.json",
+                    "name": "Our Services"
+                },
+                {
+                    "source": "templates\/our-process.json",
+                    "name": "Our Process"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 9722,
+            "dimensions": [
+                512,
+                112
+            ],
+            "image_source": "cc0",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "Client-1.png",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Client-1.png",
+            "templates": [
+                {
+                    "source": "templates\/our-properties.json",
+                    "name": "Our Properties"
+                },
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/contact-us.json",
+                    "name": "Contact Us"
+                },
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/our-services.json",
+                    "name": "Our Services"
+                },
+                {
+                    "source": "templates\/our-process.json",
+                    "name": "Our Process"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 12457,
+            "dimensions": [
+                512,
+                112
+            ],
+            "image_source": "cc0",
+            "image_urls": "https:\/\/logoipsum.com\/"
+        },
+        {
+            "filename": "Image-Gen-1-1.jpg",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Image-Gen-1-1-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/single-property.json",
+                    "name": "Single Property"
+                },
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                }
+            ],
+            "filesize": 145680,
+            "dimensions": [
+                1500,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/labs.envato.com\/apps\/image-gen\/"
+        },
+        {
+            "filename": "businessman-standing-at-office-RULJWSZ.jpg",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/businessman-standing-at-office-RULJWSZ-800x800.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                },
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/our-services.json",
+                    "name": "Our Services"
+                },
+                {
+                    "source": "templates\/our-process.json",
+                    "name": "Our Process"
+                },
+                {
+                    "source": "templates\/testimonials.json",
+                    "name": "Testimonials"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 76188,
+            "dimensions": [
+                1000,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/image-RULJWSZ"
+        },
+        {
+            "filename": "happy-female-office-worker-with-hand-on-chin-RRP5GH2.jpg",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/happy-female-office-worker-with-hand-on-chin-RRP5GH2-800x800.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                },
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/our-services.json",
+                    "name": "Our Services"
+                },
+                {
+                    "source": "templates\/our-process.json",
+                    "name": "Our Process"
+                },
+                {
+                    "source": "templates\/testimonials.json",
+                    "name": "Testimonials"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 44999,
+            "dimensions": [
+                1000,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/image-RRP5GH2"
+        },
+        {
+            "filename": "portrait-of-businessman-ZLY5FUX.jpg",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/portrait-of-businessman-ZLY5FUX-800x800.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                },
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/our-services.json",
+                    "name": "Our Services"
+                },
+                {
+                    "source": "templates\/our-process.json",
+                    "name": "Our Process"
+                },
+                {
+                    "source": "templates\/testimonials.json",
+                    "name": "Testimonials"
+                }
+            ],
+            "filesize": 57661,
+            "dimensions": [
+                1000,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/image-ZLY5FUX"
+        },
+        {
+            "filename": "adult-female-passenger-at-the-airport-ST2SKSA.jpg",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/adult-female-passenger-at-the-airport-ST2SKSA-800x800.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                },
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/our-services.json",
+                    "name": "Our Services"
+                },
+                {
+                    "source": "templates\/our-process.json",
+                    "name": "Our Process"
+                },
+                {
+                    "source": "templates\/testimonials.json",
+                    "name": "Testimonials"
+                }
+            ],
+            "filesize": 59711,
+            "dimensions": [
+                1000,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/image-ST2SKSA"
+        },
+        {
+            "filename": "Image-Gen-7.jpg",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Image-Gen-7-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single Post"
+                },
+                {
+                    "source": "templates\/our-services.json",
+                    "name": "Our Services"
+                }
+            ],
+            "filesize": 133145,
+            "dimensions": [
+                1500,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/labs.envato.com\/apps\/image-gen\/"
+        },
+        {
+            "filename": "Image-Gen-5.jpg",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Image-Gen-5-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single Post"
+                },
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/our-services.json",
+                    "name": "Our Services"
+                },
+                {
+                    "source": "templates\/our-process.json",
+                    "name": "Our Process"
+                },
+                {
+                    "source": "templates\/testimonials.json",
+                    "name": "Testimonials"
+                }
+            ],
+            "filesize": 177861,
+            "dimensions": [
+                1500,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/labs.envato.com\/apps\/image-gen\/"
+        },
+        {
+            "filename": "Arvon-Logo-Text.png",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Arvon-Logo-Text.png",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                }
+            ],
+            "filesize": 3956,
+            "dimensions": [
+                512,
+                512
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "Image-Gen-3.jpg",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Image-Gen-3-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                }
+            ],
+            "filesize": 141125,
+            "dimensions": [
+                1500,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/labs.envato.com\/apps\/image-gen\/"
+        },
+        {
+            "filename": "chief-executive-officer-XU7E4ZV.jpg",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/chief-executive-officer-XU7E4ZV-800x800.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                },
+                {
+                    "source": "templates\/single-property.json",
+                    "name": "Single Property"
+                },
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/our-process.json",
+                    "name": "Our Process"
+                },
+                {
+                    "source": "templates\/testimonials.json",
+                    "name": "Testimonials"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 59080,
+            "dimensions": [
+                1000,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/image-XU7E4ZV"
+        },
+        {
+            "filename": "indoor-office-portrait-of-pretty-mature-blond-busi-PAPVH57.jpg",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/indoor-office-portrait-of-pretty-mature-blond-busi-PAPVH57-800x800.jpg",
+            "templates": [
+                {
+                    "source": "templates\/about-us.json",
+                    "name": "About Us"
+                },
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                },
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/our-process.json",
+                    "name": "Our Process"
+                },
+                {
+                    "source": "templates\/testimonials.json",
+                    "name": "Testimonials"
+                },
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 55222,
+            "dimensions": [
+                1000,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/image-PAPVH57"
+        },
+        {
+            "filename": "poolside-6BCNZEB.jpg",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/poolside-6BCNZEB-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                },
+                {
+                    "source": "templates\/single-post.json",
+                    "name": "Single Post"
+                }
+            ],
+            "filesize": 176934,
+            "dimensions": [
+                1500,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/image-6BCNZEB"
+        },
+        {
+            "filename": "positive-confident-business-man-in-spectacles-stra-S5TQN7G.webp",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/positive-confident-business-man-in-spectacles-stra-S5TQN7G-800x800.webp",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 30516,
+            "dimensions": [
+                1000,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/image-S5TQN7G"
+        },
+        {
+            "filename": "portrait-of-happy-young-businesswoman-4NGV55T.webp",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/portrait-of-happy-young-businesswoman-4NGV55T-800x800.webp",
+            "templates": [
+                {
+                    "source": "templates\/team.json",
+                    "name": "Team"
+                }
+            ],
+            "filesize": 43874,
+            "dimensions": [
+                1000,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/image-4NGV55T"
+        },
+        {
+            "filename": "Image-Gen-15.webp",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Image-Gen-15-800x533.webp",
+            "templates": [
+                {
+                    "source": "templates\/single-property.json",
+                    "name": "Single Property"
+                }
+            ],
+            "filesize": 90098,
+            "dimensions": [
+                1500,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/labs.envato.com\/apps\/image-gen\/"
+        },
+        {
+            "filename": "Image-Gen-1.jpg",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Image-Gen-1-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/blog.json",
+                    "name": "Blog"
+                }
+            ],
+            "filesize": 138173,
+            "dimensions": [
+                1500,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/labs.envato.com\/apps\/image-gen\/"
+        },
+        {
+            "filename": "Image-Gen-14.jpg",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Image-Gen-14-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/404-error-page.json",
+                    "name": "404 Error Page"
+                }
+            ],
+            "filesize": 223128,
+            "dimensions": [
+                1500,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/labs.envato.com\/apps\/image-gen\/"
+        },
+        {
+            "filename": "Image-Gen-2.jpg",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Image-Gen-2-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/contact-us.json",
+                    "name": "Contact Us"
+                }
+            ],
+            "filesize": 188365,
+            "dimensions": [
+                1500,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/labs.envato.com\/apps\/image-gen\/"
+        },
+        {
+            "filename": "Arvon-Logo.png",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Arvon-Logo.png",
+            "templates": [
+                {
+                    "source": "templates\/header.json",
+                    "name": "Header"
+                }
+            ],
+            "filesize": 7041,
+            "dimensions": [
+                512,
+                144
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "Arvon-Logo-lights.png",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Arvon-Logo-lights.png",
+            "templates": [
+                {
+                    "source": "templates\/footer.json",
+                    "name": "Footer"
+                }
+            ],
+            "filesize": 7124,
+            "dimensions": [
+                512,
+                144
+            ],
+            "image_source": "self_created",
+            "image_urls": ""
+        },
+        {
+            "filename": "Iamge-Gen-5-Resize.png",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Iamge-Gen-5-Resize-800x393.png",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                }
+            ],
+            "filesize": 213053,
+            "dimensions": [
+                1050,
+                516
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/labs.envato.com\/apps\/image-gen\/"
+        },
+        {
+            "filename": "Image-Gen-6.jpg",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Image-Gen-6-800x1200.jpg",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                }
+            ],
+            "filesize": 155721,
+            "dimensions": [
+                1000,
+                1500
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/labs.envato.com\/apps\/image-gen\/"
+        },
+        {
+            "filename": "Image-Gen-6-1.jpg",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Image-Gen-6-1-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/our-process.json",
+                    "name": "Our Process"
+                }
+            ],
+            "filesize": 213580,
+            "dimensions": [
+                1500,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/labs.envato.com\/apps\/image-gen\/"
+        },
+        {
+            "filename": "Icon-1.png",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Icon-1.png",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/our-process.json",
+                    "name": "Our Process"
+                }
+            ],
+            "filesize": 7427,
+            "dimensions": [
+                512,
+                512
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/image-ZNPNBJD"
+        },
+        {
+            "filename": "Icon-4.png",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Icon-4.png",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/our-process.json",
+                    "name": "Our Process"
+                }
+            ],
+            "filesize": 7743,
+            "dimensions": [
+                512,
+                512
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/image-ZNPNBJD"
+        },
+        {
+            "filename": "Icon-2.png",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Icon-2.png",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/our-process.json",
+                    "name": "Our Process"
+                }
+            ],
+            "filesize": 7717,
+            "dimensions": [
+                512,
+                512
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/image-ZNPNBJD"
+        },
+        {
+            "filename": "Icon-3.png",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Icon-3.png",
+            "templates": [
+                {
+                    "source": "templates\/homepage.json",
+                    "name": "Homepage"
+                },
+                {
+                    "source": "templates\/our-process.json",
+                    "name": "Our Process"
+                }
+            ],
+            "filesize": 10807,
+            "dimensions": [
+                512,
+                512
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/image-ZNPNBJD"
+        },
+        {
+            "filename": "Icon-5.webp",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Icon-5.webp",
+            "templates": [
+                {
+                    "source": "templates\/our-services.json",
+                    "name": "Our Services"
+                }
+            ],
+            "filesize": 2754,
+            "dimensions": [
+                512,
+                512
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/image-L3ZYN57"
+        },
+        {
+            "filename": "Icon-6.webp",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Icon-6.webp",
+            "templates": [
+                {
+                    "source": "templates\/our-services.json",
+                    "name": "Our Services"
+                }
+            ],
+            "filesize": 3216,
+            "dimensions": [
+                512,
+                512
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/image-L3ZYN57"
+        },
+        {
+            "filename": "Icon-7.webp",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Icon-7.webp",
+            "templates": [
+                {
+                    "source": "templates\/our-services.json",
+                    "name": "Our Services"
+                }
+            ],
+            "filesize": 3688,
+            "dimensions": [
+                512,
+                512
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/image-L3ZYN57"
+        },
+        {
+            "filename": "Icon-10.webp",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Icon-10.webp",
+            "templates": [
+                {
+                    "source": "templates\/our-services.json",
+                    "name": "Our Services"
+                }
+            ],
+            "filesize": 4198,
+            "dimensions": [
+                512,
+                512
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/image-L3ZYN57"
+        },
+        {
+            "filename": "Icon-9.webp",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Icon-9.webp",
+            "templates": [
+                {
+                    "source": "templates\/our-services.json",
+                    "name": "Our Services"
+                }
+            ],
+            "filesize": 2650,
+            "dimensions": [
+                512,
+                512
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/image-L3ZYN57"
+        },
+        {
+            "filename": "Icon-8.png",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/Icon-8.png",
+            "templates": [
+                {
+                    "source": "templates\/our-services.json",
+                    "name": "Our Services"
+                }
+            ],
+            "filesize": 4886,
+            "dimensions": [
+                512,
+                512
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/image-L3ZYN57"
+        },
+        {
+            "filename": "mong-kok-hong-kong-26-july-2020-top-down-view-of-h-J5CXN94.jpg",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/mong-kok-hong-kong-26-july-2020-top-down-view-of-h-J5CXN94-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/our-process.json",
+                    "name": "Our Process"
+                }
+            ],
+            "filesize": 217636,
+            "dimensions": [
+                1500,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/image-J5CXN94"
+        },
+        {
+            "filename": "beijing-wangjing-soho-57TN58C.jpg",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/beijing-wangjing-soho-57TN58C-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/testimonials.json",
+                    "name": "Testimonials"
+                }
+            ],
+            "filesize": 214243,
+            "dimensions": [
+                1500,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/image-57TN58C"
+        },
+        {
+            "filename": "modern-style-conceptual-reception-interior-room-3d-AVNKQGQ.jpg",
+            "thumbnail_url": "https:\/\/dit.nomadenstudio.com\/arvon\/wp-content\/uploads\/sites\/7\/2026\/01\/modern-style-conceptual-reception-interior-room-3d-AVNKQGQ-800x533.jpg",
+            "templates": [
+                {
+                    "source": "templates\/faq.json",
+                    "name": "FAQ"
+                }
+            ],
+            "filesize": 108664,
+            "dimensions": [
+                1500,
+                1000
+            ],
+            "image_source": "envato_elements",
+            "image_urls": "https:\/\/elements.envato.com\/image-AVNKQGQ"
+        }
+    ]
+}

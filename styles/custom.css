@@ -1,0 +1,7 @@
+/* Add your design overrides here. Original styles are preserved in assets/. */
+html { scroll-behavior: smooth; }
+.local-form-status { margin-top: 12px; font-size: 14px; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .animated, .rkit-marquee { animation-duration: 0.01ms !important; }
+}

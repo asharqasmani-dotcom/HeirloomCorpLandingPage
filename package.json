@@ -1,0 +1,11 @@
+{
+  "name": "arvon-homepage-local",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Editable local Arvon homepage with original template assets",
+  "scripts": {
+    "dev": "python3 -m http.server 5173 --bind 127.0.0.1",
+    "build": "python3 scripts/build.py",
+    "preview": "python3 -m http.server 4173 --bind 127.0.0.1 --directory dist"
+  }
+}
