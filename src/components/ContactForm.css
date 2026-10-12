@@ -231,20 +231,6 @@
   background-color: rgba(245, 242, 233, 0.92);
 }
 
-.contact-config-note {
-  margin-top: 14px;
-  font-family: var(--font-body);
-  font-size: 12px;
-  line-height: 1.5;
-  color: var(--ivory-on-dark);
-  text-align: center;
-}
-
-.contact-config-note code {
-  font-size: 11px;
-  color: var(--gold);
-}
-
 @media (max-width: 767px) {
   .newsletter-backdrop {
     padding: 80px 0;

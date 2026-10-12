@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { submitContact, INQUIRY_TYPES, getContactEndpoint, CONTACT_RECIPIENT } from '../services/api';
+import { submitContact, INQUIRY_TYPES, CONTACT_RECIPIENT } from '../services/api';
 import { ContactFormData } from '../types';
 import { User, Mail, ListFilter, MessageSquare, CheckCircle, AlertCircle, Loader2, ChevronDown } from 'lucide-react';
 import './ContactForm.css';
@@ -17,8 +17,6 @@ export const ContactForm: React.FC = () => {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [statusMessage, setStatusMessage] = useState('');
   const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
-  const backendConfigured = Boolean(getContactEndpoint());
-
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
   ) => {
@@ -79,7 +77,6 @@ export const ContactForm: React.FC = () => {
               className="contact-form"
               onSubmit={handleSubmit}
               noValidate
-              aria-describedby={!backendConfigured ? 'contact-config-note' : undefined}
             >
               <div className="contact-form-card">
                 <div className="contact-grid">
@@ -242,14 +239,6 @@ export const ContactForm: React.FC = () => {
                 <div className="form-alert error-alert contact-alert" role="alert">
                   <AlertCircle size={18} /> {statusMessage}
                 </div>
-              )}
-
-              {/* Visible only while no submission service is configured (never a false success) */}
-              {!backendConfigured && status !== 'error' && (
-                <p id="contact-config-note" className="contact-config-note">
-                  Form delivery requires backend configuration (<code>VITE_CONTACT_ENDPOINT</code>).
-                  Until then, inquiries go to {CONTACT_RECIPIENT} by email.
-                </p>
               )}
             </form>
           </div>
